@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-        
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     </head>
-    <body class="">
-        <div class="">
+    <body class="flex h-16 items-center justify-between bg-gray-800 text-gray-100 px-4">
+        
+        <div class="flex h-full items-center space-x-2 justify-start">
             @if (Route::has('login'))
                 <div class="">
                     @auth
